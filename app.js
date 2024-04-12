@@ -5,6 +5,8 @@ var logger = require("morgan");
 
 require("./models/connection");
 
+require("dotenv").config();
+
 var indexRouter = require("./routes/index");
 var weatherRouter = require("./routes/weather");
 var usersRouter = require("./routes/users");
